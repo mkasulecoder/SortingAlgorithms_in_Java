@@ -1,7 +1,7 @@
 /**
- * A Selection sort algorithm that focuses on sorting a list of items
+ * A Selection sort Program/algorithm that focuses on sorting a list of items
  * in both ascending and descending order. The larger the dataset, the inefficient the algo works
- * Time complexity = O(n^2)
+ * Time complexity Best, Average and Worst case Scenario = O(n^2)
  * @author Mark Kasule
  */
 public class SelectionSort {
@@ -10,8 +10,14 @@ public class SelectionSort {
 
         int[] array = {3,4,6,2,7,1,99,5};
 
-        // ascendingSort(array);
+        // Average Case Scenario - sort jumbled data in reverse order
         descendingSort(array);
+
+        // Worst Case Scenario - sorting reversed data
+        ascendingSort(array);
+
+        // Best case Scenario - already sorted data
+        ascendingSort(array);
 
         for(int value : array) {
             System.out.print(value + "\t");
